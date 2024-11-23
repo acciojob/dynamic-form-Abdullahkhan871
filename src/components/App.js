@@ -10,7 +10,7 @@ const App = () => {
         className="delete"
         type="submit"
         value={"Delete"}
-        onClick={eve => eve.target.parentElement.remove()}
+        onClick={(eve) => eve.target.parentElement.remove()}
       />
     </div>
   );
@@ -21,7 +21,7 @@ const App = () => {
           eve.preventDefault();
         }}
       >
-        {vlv.length > 0 ? vlv.map((item) => item) : <p>No field in the form</p>}
+        {vlv.length > 0 ? vlv.map((item) => item) : <p>Add Field</p>}
       </form>
       <button className="add" onClick={() => setVlv([...vlv, elm])}>
         Click
