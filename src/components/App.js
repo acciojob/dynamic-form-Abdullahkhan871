@@ -7,12 +7,12 @@ const App = () => {
   const elm = (
     <div key={vlv.length}>
       <input type="text" />
-      <input
+      <button
         className="delete"
         type="submit"
         value={"Delete"}
         onClick={(eve) => eve.target.parentElement.remove()}
-      />
+      >Delete</button>
     </div>
   );
 
